@@ -21,7 +21,7 @@ COLORS[--white]='\033[1;37m'
 NO_COLOR='\033[0m'
 
 if [[ "$#" -lt 2 || "$1" == "--help" || "$1" == "-h" ]]; then
-    echo "Usage: echo \"text\" | highlight --color1 term1 term2 ... --colorN termN ..."
+    echo "Usage: echo \"text\" | hl --color1 term1 term2 ... --colorN termN ..."
     echo "Available colors: ${!COLORS[@]}"
     exit 0
 fi
